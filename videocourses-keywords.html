@@ -1,0 +1,1010 @@
+<h1 class="video-nav-header">ICE Video Keywords</h1><input type="text" id="keywordSearchInput" onkeyup="filterKeywords()" placeholder="Search for keywords..." style="width: 100%; font-size: 1.2em; padding: 10px; margin-bottom: 20px; box-sizing: border-box;">
+
+<script>
+function filterKeywords() {
+  // 1. Get input
+  let input = document.getElementById('keywordSearchInput');
+  let filter = input.value.toLowerCase();
+  
+  // 2. Get all groups and items
+  let groups = document.getElementsByClassName('keyword-group');
+  let items = document.getElementsByClassName('keyword-item');
+
+  // 3. Filter individual keyword items
+  for (let i = 0; i < items.length; i++) {
+    let a = items[i].getElementsByTagName('a')[0];
+    let txtValue = a.textContent || a.innerText;
+    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+      items[i].style.display = "";
+    } else {
+      items[i].style.display = "none";
+    }
+  }
+
+  // 4. Show/hide entire groups
+  for (let i = 0; i < groups.length; i++) {
+    let group = groups[i];
+    let itemsInGroup = group.getElementsByClassName('keyword-item');
+    let foundVisibleItem = false;
+
+    for (let j = 0; j < itemsInGroup.length; j++) {
+      if (itemsInGroup[j].style.display !== "none") {
+        foundVisibleItem = true;
+        break;  
+      }
+    }
+    
+    if (foundVisibleItem) {
+      group.style.display = "";
+    } else {
+      group.style.display = "none";
+    }
+  }
+}
+</script>
+
+<div class="jump-nav">
+<a href="#group-Ages">Ages</a>
+<a href="#group-num">#</a>
+<a href="#group-A">A</a>
+<a href="#group-B">B</a>
+<a href="#group-C">C</a>
+<a href="#group-D">D</a>
+<a href="#group-E">E</a>
+<a href="#group-F">F</a>
+<a href="#group-G">G</a>
+<a href="#group-H">H</a>
+<a href="#group-I">I</a>
+<a href="#group-J">J</a>
+<a href="#group-K">K</a>
+<a href="#group-L">L</a>
+<a href="#group-M">M</a>
+<a href="#group-N">N</a>
+<a href="#group-O">O</a>
+<a href="#group-P">P</a>
+<a href="#group-Q">Q</a>
+<a href="#group-R">R</a>
+<a href="#group-S">S</a>
+<a href="#group-T">T</a>
+<a href="#group-U">U</a>
+<a href="#group-V">V</a>
+<a href="#group-W">W</a>
+</div>
+<hr>
+
+<div id="keyword-list-wrapper">
+<div class="keyword-group" id="group-Ages-wrapper">
+<h2 id="group-Ages">Pediatric Ages</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=5%20months">5 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=6%20months">6 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=7%20months">7 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=9%20months">9 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=10%20months">10 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=11%20months">11 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=12%20months">12 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=14%20months">14 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=16%20months">16 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=17%20months">17 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=20%20months">20 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=21%20months">21 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=23%20months">23 months</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=25%20months">25 months</a></div>
+</div>
+<div class="keyword-group" id="group-num-wrapper">
+<h2 id="group-num">#</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=001">001</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=002">002</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=003">003</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=004">004</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=005">005</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=006">006</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=007">007</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=008">008</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=009">009</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=010">010</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=011">011</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=013">013</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=015">015</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=016">016</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=017">017</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=018">018</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=019">019</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=020">020</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=021">021</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=022">022</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=023">023</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=024">024</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=025">025</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=026">026</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=027">027</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=028">028</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=029">029</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=030">030</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=031">031</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=032">032</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=033">033</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=034">034</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=035">035</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=036">036</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=037">037</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=038">038</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=040">040</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=041">041</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=042">042</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=043">043</a></div>
+</div>
+<div class="keyword-group" id="group-A-wrapper">
+<h2 id="group-A">A</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=abduction">abduction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=active%20assist%20rom">active assist rom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=active%20range%20of%20motion">active range of motion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=activities%20of%20daily%20living">activities of daily living</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=activities%20of%20daily%20living%20%28adl%29">activities of daily living (adl)</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=activity">activity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=activity%20demands">activity demands</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=acute">acute</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=acute%20care">acute care</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=acute%20care%20setting">acute care setting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=acute%20stroke%20survivor">acute stroke survivor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=acute%20stroke%20survivors">acute stroke survivors</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adaptation">adaptation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adaptive">adaptive</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adaptive%20device">adaptive device</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adaptive%20equipment">adaptive equipment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adhd">adhd</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adl">adl</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=adl%20training">adl training</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=adls">adls</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=afo">afo</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=agitation">agitation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=aid">aid</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=alarm">alarm</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=alice">alice</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ambulate">ambulate</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ambulation">ambulation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=american%20sign%20language">american sign language</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=analysis%20of%20occupational%20performance">analysis of occupational performance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=angela">angela</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ankle%20foot%20orthotics%20%28afo%29">ankle foot orthotics (afo)</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ankle-foot%20orthosis">ankle-foot orthosis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=anterior">anterior</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=anterior%20glide">anterior glide</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=antigravity">antigravity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=antigravity%20movement">antigravity movement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=aphasia">aphasia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=applesauce">applesauce</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=arm">arm</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=arom">arom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=arouse">arouse</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=arthroscopic%20surgery">arthroscopic surgery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=asl">asl</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=aspiration">aspiration</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=aspiration%20precautions">aspiration precautions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=assess%20motor%20control">assess motor control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=assessment">assessment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=assist">assist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=assistance">assistance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=assistive%20device">assistive device</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=asymmetry">asymmetry</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=attention">attention</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=auditory%20memory">auditory memory</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=awaken">awaken</a></div>
+</div>
+<div class="keyword-group" id="group-B-wrapper">
+<h2 id="group-B">B</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=balance">balance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=balance%20board">balance board</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=balance%20disc">balance disc</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=balance%20reaction">balance reaction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=balance%20training">balance training</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ball">ball</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=balloon">balloon</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=base%20of%20support">base of support</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bathing">bathing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bathtub%20transfer">bathtub transfer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=beads">beads</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bed%20mobility">bed mobility</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bed%20positioning">bed positioning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bedside">bedside</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=bedside%20adls">bedside adls</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=bedside%20oral%20motor%20assessment">bedside oral motor assessment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=behavioral%20optometrist">behavioral optometrist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=belt">belt</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ben">ben</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=biceps">biceps</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bilateral">bilateral</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bilateral%20hand">bilateral hand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bilateral%20hand%20skills">bilateral hand skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bilateral%20pull%20to%20stand">bilateral pull to stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bimanual">bimanual</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=blood%20pressure">blood pressure</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=blood%20pressure%20cuff">blood pressure cuff</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=body%20functions">body functions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=body%20mechanics">body mechanics</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bp">bp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bra">bra</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=breakfast">breakfast</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=breath%20control">breath control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=bridging">bridging</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=brush%20hair">brush hair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=brush%20teeth">brush teeth</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=buttons">buttons</a></div>
+</div>
+<div class="keyword-group" id="group-C-wrapper">
+<h2 id="group-C">C</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=call%20bell">call bell</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=call%20light">call light</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=calvin">calvin</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cane">cane</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=car">car</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=car%20transfer">car transfer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cardiac%20surgery">cardiac surgery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=caregiver">caregiver</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=carlyn">carlyn</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=carpal%20tunnel">carpal tunnel</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=carrying">carrying</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cat%20toy">cat toy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=catheters">catheters</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cause%20and%20effect">cause and effect</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=central%20lines">central lines</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cerebral%20vascular%20accident">cerebral vascular accident</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=certified%20hand%20therapist">certified hand therapist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=chair">chair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=chew">chew</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=chronic%20obstructive%20pulmonary%20disease">chronic obstructive pulmonary disease</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cht">cht</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=client-centered">client-centered</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=client-therapist%20interactions">client-therapist interactions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=clinical%20reasoning">clinical reasoning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=clint">clint</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=clothing%20management">clothing management</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=co-treat">co-treat</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=co-treatment">co-treatment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cognition">cognition</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cognitive">cognitive</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=collaboration">collaboration</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=coloring">coloring</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=combined%20mobility%20and%20stability">combined mobility and stability</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=commode">commode</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=communication">communication</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=community">community</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=compensatory%20techniques">compensatory techniques</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=compression%20glove">compression glove</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=concetta">concetta</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=contralateral">contralateral</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=contralateral%20pull%20to%20stand">contralateral pull to stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=coordination">coordination</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=copd">copd</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cotreat">cotreat</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cotreatment">cotreatment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=crawl">crawl</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=crawling">crawling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=crayon">crayon</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=crayons">crayons</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=creep%20to%20sit">creep to sit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=creeping">creeping</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cruising">cruising</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cups">cups</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=curiosity">curiosity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=custom%20splint">custom splint</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cva">cva</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=cylindrical%20grasp">cylindrical grasp</a></div>
+</div>
+<div class="keyword-group" id="group-D-wrapper">
+<h2 id="group-D">D</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dale">dale</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dealva">dealva</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dementia">dementia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=development">development</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=developmental%20optometrist">developmental optometrist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dick">dick</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=differentiated%20hand%20use">differentiated hand use</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=discharge%20planning">discharge planning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=discovery">discovery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=disk%20grasp">disk grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=disregard">disregard</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dizziness">dizziness</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=doff%20shirt">doff shirt</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=doffing%20jacket">doffing jacket</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=don%20shoes">don shoes</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=donn%20shirt">donn shirt</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=donning%20shoes">donning shoes</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dorsal%20glide">dorsal glide</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dr%20t">dr t</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=drawing">drawing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dressing">dressing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dry%20needling">dry needling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dynamometer">dynamometer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=dysphagia">dysphagia</a></div>
+</div>
+<div class="keyword-group" id="group-E-wrapper">
+<h2 id="group-E">E</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=early%20childhood">early childhood</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=eating">eating</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=eccentric%20control">eccentric control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=edema">edema</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=edge%20of%20bed">edge of bed</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=edge%20of%20mat">edge of mat</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=education">education</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ekg%20telemetry">ekg telemetry</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=ekg%20telemetry%20monitor">ekg telemetry monitor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=elbow">elbow</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=elbow%20pain">elbow pain</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=elevation">elevation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ellanora">ellanora</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=energy%20conservation">energy conservation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=enriched%20environments">enriched environments</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=environment">environment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=environmental%20considerations">environmental considerations</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=eob">eob</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=equilibrium">equilibrium</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=equipment">equipment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ergonomic">ergonomic</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=evaluation">evaluation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=exam">exam</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=exercise">exercise</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=exploration">exploration</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=exploring%20environment">exploring environment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=extension">extension</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=extensor%20digitorum%20communis">extensor digitorum communis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=external%20rotation">external rotation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=extrinsic%20tightness">extrinsic tightness</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=eye%20contact">eye contact</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=eye-hand">eye-hand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=eye-hand%20coordination">eye-hand coordination</a></div>
+</div>
+<div class="keyword-group" id="group-F-wrapper">
+<h2 id="group-F">F</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fabrication">fabrication</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=facilitate%20standing%20tolerance">facilitate standing tolerance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=facilitating%20motor%20control">facilitating motor control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=facilitation">facilitation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=facilitation%20of%20dynamic%20trunk%20and%20limb%20control">facilitation of dynamic trunk and limb control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fall%20prevention">fall prevention</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=family">family</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=family%20teaching">family teaching</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fatigue">fatigue</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fear">fear</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=feeding">feeding</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=femur%20fracture">femur fracture</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=figure%20ground">figure ground</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fine%20motor">fine motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fine%20motor%20skills">fine motor skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=finger">finger</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=finger%20flexion">finger flexion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=finger%20food">finger food</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=flaccid">flaccid</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=flexion">flexion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=flexion%20synergy">flexion synergy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=flowers">flowers</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=foley%20catheter">foley catheter</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=follow-up">follow-up</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=food">food</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=forearm%20supination">forearm supination</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fork">fork</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=forward%20flexion">forward flexion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fracture">fracture</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fran">fran</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=free%20play">free play</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=front%20wheeled%20walker">front wheeled walker</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=frustration">frustration</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=frustration%20tolerance">frustration tolerance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=fti%202_9_2">fti 2_9_2</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=function">function</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=functional%20activities">functional activities</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=functional%20activity">functional activity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=functional%20mobility">functional mobility</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=functional%20tasks">functional tasks</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=functional%20treatment">functional treatment</a></div>
+</div>
+<div class="keyword-group" id="group-G-wrapper">
+<h2 id="group-G">G</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=gait">gait</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=gait%20belt">gait belt</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=gait%20training">gait training</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=goal%20directed">goal directed</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=goals">goals</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=goniometer">goniometer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=goniometry">goniometry</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=grasp">grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=grip">grip</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=grooming">grooming</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=gross%20grasp">gross grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=gross%20motor">gross motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=guide">guide</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=guiding">guiding</a></div>
+</div>
+<div class="keyword-group" id="group-H-wrapper">
+<h2 id="group-H">H</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand">hand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20dominance">hand dominance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20eye%20coordination">hand eye coordination</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20function">hand function</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20preference">hand preference</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20skill">hand skill</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20skills">hand skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hand%20therapy">hand therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=handwriting">handwriting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=harriet">harriet</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=head%20control">head control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=head%20righting">head righting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hearing%20loss">hearing loss</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=heart%20monitor">heart monitor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=heart%20rate">heart rate</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=heat">heat</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=heat%20gun">heat gun</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=heat%20modality">heat modality</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=heavy%20work">heavy work</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hemionopsia">hemionopsia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hemiplegia">hemiplegia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=henry">henry</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hep">hep</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=high%20chair">high chair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hip%20fracture">hip fracture</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hip%20precautions">hip precautions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hip%20replacement">hip replacement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=history">history</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=home">home</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=home%20exercise">home exercise</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=home%20exercise%20program">home exercise program</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=home%20health">home health</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=home%20program">home program</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hospital%20room">hospital room</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hoyer%20lift">hoyer lift</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ht">ht</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hygiene">hygiene</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hyperextension">hyperextension</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=hypotension">hypotension</a></div>
+</div>
+<div class="keyword-group" id="group-I-wrapper">
+<h2 id="group-I">I</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=iadl">iadl</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=iadls">iadls</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=icdl">icdl</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ice%20slush">ice slush</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=icf%20model">icf model</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=icu">icu</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=immobilization">immobilization</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=impairments">impairments</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=impairments%20in%20motor%20control">impairments in motor control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=in-hand%20manipulation">in-hand manipulation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=incision">incision</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=incomplete%20quadriplegia">incomplete quadriplegia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=independent">independent</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=infant">infant</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=inferior%20pincer%20grasp">inferior pincer grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=initial%20assessment">initial assessment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=initial%20assessment%20inpatient">initial assessment inpatient</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=initial%20exam">initial exam</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=initial%20interview">initial interview</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=inpatient">inpatient</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=instrumental%20activities%20of%20daily%20living">instrumental activities of daily living</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=intensive%20care%20unit">intensive care unit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=internal%20fixation">internal fixation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=internal%20rotation">internal rotation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=interprofessional">interprofessional</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=interprofessional%20education">interprofessional education</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=intervention">intervention</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=intervention%20methods">intervention methods</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=intervention%20plan">intervention plan</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=interview">interview</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=intrinsic%20tightness">intrinsic tightness</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=involved%20side">involved side</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ipad">ipad</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ipe">ipe</a></div>
+</div>
+<div class="keyword-group" id="group-J-wrapper">
+<h2 id="group-J">J</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=jack">jack</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=jan%20davis">jan davis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=janita">janita</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=janita%20torres">janita torres</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=jimmie">jimmie</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=jo">jo</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=johnny">johnny</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=joint">joint</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=joint%20measurement">joint measurement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=joint%20mobilization">joint mobilization</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=joint%20replacement">joint replacement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=just-right%20challenge">just-right challenge</a></div>
+</div>
+<div class="keyword-group" id="group-K-wrapper">
+<h2 id="group-K">K</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=key%20problem%20areas">key problem areas</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=kirstie">kirstie</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=kitchen">kitchen</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=kitchen%20evaluation">kitchen evaluation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=knee">knee</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=knee%20exercises">knee exercises</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=knee%20extension">knee extension</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=kneel">kneel</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=kneeling">kneeling</a></div>
+</div>
+<div class="keyword-group" id="group-L-wrapper">
+<h2 id="group-L">L</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=laminectomy">laminectomy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=landmarks">landmarks</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=language">language</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lateral%20epicondylitis">lateral epicondylitis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=lauren">lauren</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=le">le</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=left%20hemiplegia">left hemiplegia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lego">lego</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=leisure%20activity">leisure activity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lethargic">lethargic</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=letter%20formation">letter formation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=liam">liam</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=library">library</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=light%20touch">light touch</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=limited%20rom">limited rom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=literacy">literacy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=locomotion">locomotion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=long%20term%20care">long term care</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=low%20level%20patients">low level patients</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lowell">lowell</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lower%20body%20dressing">lower body dressing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lower%20extremity">lower extremity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lower%20extremity%20assessment">lower extremity assessment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=lower%20extremity%20control">lower extremity control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lower%20extremity%20exercise">lower extremity exercise</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ltc">ltc</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lucas">lucas</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lymphatic">lymphatic</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lymphatic%20drainage">lymphatic drainage</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=lymphatic%20mobilization">lymphatic mobilization</a></div>
+</div>
+<div class="keyword-group" id="group-M-wrapper">
+<h2 id="group-M">M</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=manipulation">manipulation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=manual%20lymphatic%20decongestion">manual lymphatic decongestion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=manual%20lymphatic%20drainage">manual lymphatic drainage</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=manual%20therapy">manual therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=marilyn">marilyn</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=markers">markers</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=marsha">marsha</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mary">mary</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=massage">massage</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=mat%20activities">mat activities</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=maximum%20assist">maximum assist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=meal%20preparation">meal preparation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=measurement">measurement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=measuring%20rom">measuring rom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=measuring%20rom%20observation">measuring rom observation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=medical%20history">medical history</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=medically%20complex">medically complex</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=memory">memory</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mental%20%26%20behavioral%20disorders">mental & behavioral disorders</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mental%20and%20behavioral%20disorders">mental and behavioral disorders</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mental%20functions">mental functions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=midline">midline</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=milestone">milestone</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mitral%20valve">mitral valve</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mld">mld</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mobility">mobility</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=modality">modality</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=moderate%20assist">moderate assist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=modified%20diet">modified diet</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=molly">molly</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=monitor">monitor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=motivation">motivation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=motor">motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=motor%20control">motor control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=motor%20deficit">motor deficit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=motor%20planning">motor planning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=motor%20skills">motor skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=movement">movement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=mrs.%20torres">mrs. torres</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ms">ms</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=multiple%20sclerosis">multiple sclerosis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=muscle%20re-education">muscle re-education</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=muscle%20strength">muscle strength</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=muscle%20tone">muscle tone</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=musculoskeletal">musculoskeletal</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=myofascial%20pain">myofascial pain</a></div>
+</div>
+<div class="keyword-group" id="group-N-wrapper">
+<h2 id="group-N">N</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=nasogastric">nasogastric</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=neuromusculoskeletal%20functions">neuromusculoskeletal functions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=neurorehabiltiation">neurorehabiltiation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ng%20tube">ng tube</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=nonfunctional">nonfunctional</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=nonfunctional%20upper%20extremity">nonfunctional upper extremity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=nonverbal%20communication">nonverbal communication</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=normal%20movement">normal movement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=numbness">numbness</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=nursing">nursing</a></div>
+</div>
+<div class="keyword-group" id="group-O-wrapper">
+<h2 id="group-O">O</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=object%20permanence">object permanence</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=observation">observation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=observations">observations</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=observations%20of%20asymmetry">observations of asymmetry</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=observations%20of%20discomfort">observations of discomfort</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=observations%20of%20motor%20control">observations of motor control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=occupation%20based">occupation based</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=occupation-based%20activity">occupation-based activity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=occupational%20profile">occupational profile</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=occupational%20therapist">occupational therapist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=occupational%20therapy">occupational therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ocular%20motor">ocular motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=oculomotor">oculomotor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=one-handed%20shoe%20tying">one-handed shoe tying</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=open%20reduction">open reduction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=opening%20a%20container">opening a container</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=opposition">opposition</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=oral%20hygiene">oral hygiene</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=oral%20motor">oral motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=orientation">orientation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ortega">ortega</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=orthopedic">orthopedic</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=orthosis">orthosis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=orthotic">orthotic</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ot">ot</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ota">ota</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=outpatient">outpatient</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=oxygen%20monitor">oxygen monitor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=oxygen%20saturation">oxygen saturation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=oxygen%20saturation%20level">oxygen saturation level</a></div>
+</div>
+<div class="keyword-group" id="group-P-wrapper">
+<h2 id="group-P">P</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pain">pain</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=palmar%20grasp">palmar grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pants">pants</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=paper%20orientation">paper orientation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=paraffin">paraffin</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=parallel%20bars">parallel bars</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=paratransit">paratransit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=parent">parent</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=parent-therapist%20partnership">parent-therapist partnership</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=parkinson%27s">parkinson's</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=participation">participation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=passive%20range%20of%20motion">passive range of motion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=passive%20rom">passive rom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=patella">patella</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=patellar%20mobilization">patellar mobilization</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=patient%20education">patient education</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=patient%20history">patient history</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pattern">pattern</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=paul">paul</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=paula">paula</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pediatric">pediatric</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pediatrics">pediatrics</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=peds">peds</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pelvic%20tilt">pelvic tilt</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pencil">pencil</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pencil%20grasp">pencil grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pendulum">pendulum</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=perception">perception</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=perceptual">perceptual</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=perceptual%20motor">perceptual motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=performance%20skills">performance skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=perseverance">perseverance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=persevere">persevere</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=persistence">persistence</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=personal%20history">personal history</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=personal%20hygiene">personal hygiene</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=phyllis">phyllis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=physical%20therapist">physical therapist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=physical%20therapy">physical therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=physiology%20of%20lymphatic%20system">physiology of lymphatic system</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pinch">pinch</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=piston%20technique">piston technique</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pivoting">pivoting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=plan%20of%20intervention">plan of intervention</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=platform%20walker">platform walker</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=play">play</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=playdough">playdough</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=positioning">positioning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=positioning%20in%20the%20chair">positioning in the chair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=post%20surgery">post surgery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=post-stroke">post-stroke</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=posterior">posterior</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=posterior%20glide">posterior glide</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=postural%20alignment">postural alignment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=power%20grasp">power grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pre-crawling">pre-crawling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=pre-functional%20activities">pre-functional activities</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=precautions">precautions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=prehensile%20grasp">prehensile grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=preparation">preparation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=preparation%20to%20stand">preparation to stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=prism%20glasses">prism glasses</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=problem%20areas">problem areas</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=problem%20solving">problem solving</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=process%20skills">process skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=processing">processing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=prognostic%20indicators">prognostic indicators</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=prom">prom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pronated%20grasp">pronated grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pronation">pronation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=prone">prone</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=prone%20extension">prone extension</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=prone%20to%20kneel">prone to kneel</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=proprioception">proprioception</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=protraction">protraction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=psychosocial">psychosocial</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pt">pt</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pull%20to%20stand">pull to stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=pulse%20oximeter">pulse oximeter</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=puzzle">puzzle</a></div>
+</div>
+<div class="keyword-group" id="group-Q-wrapper">
+<h2 id="group-Q">Q</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=quadriceps">quadriceps</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=quadriparesis">quadriparesis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=quadruped">quadruped</a></div>
+</div>
+<div class="keyword-group" id="group-R-wrapper">
+<h2 id="group-R">R</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=radial%20distal%20grasp">radial distal grasp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=radial%20fracture">radial fracture</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=radius">radius</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=range%20of%20motion">range of motion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rattle">rattle</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=reach">reach</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=reaching">reaching</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rebbekah">rebbekah</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=recovery">recovery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=reduction">reduction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=refuse">refuse</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=regulation%20of%20muscle%20tone">regulation of muscle tone</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rehab">rehab</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rehabilitation">rehabilitation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=release">release</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=repetition">repetition</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=respiratory%20therapy">respiratory therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=restricted%20movement">restricted movement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=right%20hemiplegia">right hemiplegia</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=righting">righting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=righting%20reaction">righting reaction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=righting%20reactions">righting reactions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rocking">rocking</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=roll">roll</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rolling">rolling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rom">rom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=roms">roms</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=rotator%20cuff">rotator cuff</a></div>
+</div>
+<div class="keyword-group" id="group-S-wrapper">
+<h2 id="group-S">S</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=safe%20guidelines">safe guidelines</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=safety">safety</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=safety%20training">safety training</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scaffold">scaffold</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scaption">scaption</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scapula">scapula</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=scapular%20mobilization">scapular mobilization</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scar">scar</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scar%20mobilization">scar mobilization</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scooter%20board">scooter board</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scooting">scooting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=scooting%20to%20edge%20of%20bed">scooting to edge of bed</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=self%20care">self care</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=self-care">self-care</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=self-feeding">self-feeding</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=self-rom">self-rom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensation">sensation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensory">sensory</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensory%20functions">sensory functions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensory%20integration">sensory integration</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensory%20monitor">sensory monitor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensory%20processing">sensory processing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=sensory%20status">sensory status</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sensory%20testing">sensory testing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sequencing">sequencing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shapes">shapes</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shaving">shaving</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shoes">shoes</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shoulder">shoulder</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shoulder%20abduction">shoulder abduction</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shoulder%20extension">shoulder extension</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shoulder%20flexion">shoulder flexion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shoulder%20pain">shoulder pain</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shower">shower</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shower%20chair">shower chair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shower%20setup">shower setup</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=shower%20transfer">shower transfer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=showering">showering</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=side%20sitting">side sitting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=side%20stepping">side stepping</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sidelying">sidelying</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sidelying%20to%20sitting">sidelying to sitting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sign">sign</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sit">sit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sit%20to%20stand">sit to stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sitting">sitting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sitting%20balance">sitting balance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sitting%20to%20sidelying">sitting to sidelying</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sitting%20tolerance">sitting tolerance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=skilled%20nursing">skilled nursing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=skilled%20nursing%20facility">skilled nursing facility</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sling">sling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sling%20surgery">sling surgery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=slp">slp</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=snf">snf</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sock%20aid">sock aid</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=socks">socks</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=solitary%20play">solitary play</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=speech">speech</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=speech%20and%20language%20pathologist">speech and language pathologist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=speech%20pathology">speech pathology</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=speech%20therapy">speech therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=spelling">spelling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=spinal%20fusion">spinal fusion</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=spinal%20stenosis">spinal stenosis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=splint">splint</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=splint%20adjustment">splint adjustment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=splint%20care">splint care</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=splint%20check">splint check</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=splint%20modification">splint modification</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=splinting">splinting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sponge%20bath">sponge bath</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=spoon">spoon</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=squat">squat</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=squatting">squatting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stability">stability</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stairs">stairs</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stance%20phase">stance phase</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stand">stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stand%20pivot%20transfer">stand pivot transfer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stand%20to%20sit">stand to sit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=standardized%20assessment">standardized assessment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=standing">standing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=standing%20balance">standing balance</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=standing%20frame">standing frame</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=sternal%20precautions">sternal precautions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stickers">stickers</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stnr">stnr</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=strapping">strapping</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=strength">strength</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=strength%20training">strength training</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=strength%20ue">strength ue</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=strengthening">strengthening</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stretching">stretching</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stroke">stroke</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=stroke%20recovery">stroke recovery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=stroke%20survivor">stroke survivor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=stroke%20survivors">stroke survivors</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=subluxation">subluxation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=suction%20catheter">suction catheter</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=suctioning">suctioning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supination">supination</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supine">supine</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supine%20to%20sidelying">supine to sidelying</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=support">support</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supported">supported</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supported%20sitting">supported sitting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supported%20squatting">supported squatting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supported%20standing">supported standing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=supported%20walking">supported walking</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=surgery">surgery</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=surgical%20repair">surgical repair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=swallow">swallow</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=swallowing">swallowing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=swelling">swelling</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=swing%20phase">swing phase</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=symmetric%20tonic%20neck%20reflex">symmetric tonic neck reflex</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=synergy">synergy</a></div>
+</div>
+<div class="keyword-group" id="group-T-wrapper">
+<h2 id="group-T">T</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=table%20slides">table slides</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=table%20work">table work</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tablework">tablework</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tactile%20cue">tactile cue</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=task">task</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tendonitis">tendonitis</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tennis%20elbow">tennis elbow</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=test%20administration">test administration</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=test%20of%20visual%20motor%20skills">test of visual motor skills</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=therapeutic%20activities">therapeutic activities</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=therapeutic%20exercise">therapeutic exercise</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=therapeutic%20use%20of%20self">therapeutic use of self</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=therapist">therapist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=therapy">therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=therapy%20ball">therapy ball</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=thermoplastic">thermoplastic</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=thick%20liquids">thick liquids</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=thr">thr</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tkr">tkr</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=toilet%20transfer">toilet transfer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=toileting">toileting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tom">tom</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tone">tone</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=torres">torres</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=total%20assist">total assist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=total%20hip%20precautions">total hip precautions</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=total%20hip%20replacement">total hip replacement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=total%20knee%20replacement">total knee replacement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=toy">toy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=trach">trach</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tracheostomy">tracheostomy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=transfer">transfer</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=transition">transition</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=transition%20to%20sit">transition to sit</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=treatment">treatment</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=treatment%20goals">treatment goals</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=treatment%20methods">treatment methods</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=treatment%20plan">treatment plan</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=treatment%20session">treatment session</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=treatment%20strategies">treatment strategies</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=troy">troy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=trunk">trunk</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=trunk%20control">trunk control</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=trunk%20rotation">trunk rotation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=tuna%20fish">tuna fish</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=two%20person%20assist">two person assist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=two-person%20assist">two-person assist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=typical%20movement">typical movement</a></div>
+</div>
+<div class="keyword-group" id="group-U-wrapper">
+<h2 id="group-U">U</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ue">ue</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ue%20dressing">ue dressing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=uneven%20surfaces">uneven surfaces</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=unilateral">unilateral</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=unilateral%20hand">unilateral hand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=unilateral%20pull%20to%20stand">unilateral pull to stand</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=unsupported%20sitting">unsupported sitting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=unsupported%20standing">unsupported standing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=unsupported%20walking">unsupported walking</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=upper%20extremity">upper extremity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=upper%20extremity%20movement">upper extremity movement</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=upper%20extremity%20weight%20bearing">upper extremity weight bearing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=upright%20posture">upright posture</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=upward%20rotation">upward rotation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=utensil">utensil</a></div>
+</div>
+<div class="keyword-group" id="group-V-wrapper">
+<h2 id="group-V">V</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=velcro">velcro</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ventilator">ventilator</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=ventilators">ventilators</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=ventriculostomies">ventriculostomies</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=ventriculostomy">ventriculostomy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=verbal%20communication">verbal communication</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=verbal%20cues">verbal cues</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vertical%20writing">vertical writing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vision">vision</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vision%20screen">vision screen</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vision%20therapy">vision therapy</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual%20field">visual field</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual%20field%20deficits">visual field deficits</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual%20memory">visual memory</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/videocourses/search?q=visual%20observation">visual observation</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual%20perception">visual perception</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual%20scanning">visual scanning</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual%20tracking">visual tracking</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=visual-motor">visual-motor</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vital%20capacity">vital capacity</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vital%20signs">vital signs</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vitals">vitals</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=vnt1.1.3">vnt1.1.3</a></div>
+</div>
+<div class="keyword-group" id="group-W-wrapper">
+<h2 id="group-W">W</h2>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=walk">walk</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=walker">walker</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=walking">walking</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wash%20dishes">wash dishes</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=washing%20car">washing car</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=weakness">weakness</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wear%20schedule">wear schedule</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=weight%20bearing">weight bearing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=weight%20shift">weight shift</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=weight%20shifting">weight shifting</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=weightbearing">weightbearing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=weights">weights</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wheelchair">wheelchair</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=whisk">whisk</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=work">work</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wound">wound</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wound%20healing">wound healing</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wrist">wrist</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wrist%20cockup">wrist cockup</a></div>
+<div class="keyword-item"><a href="https://videos.icelearningcenter.com/icevideolibrary/search?q=wrist%20extension">wrist extension</a></div>
+</div>
+</div>
